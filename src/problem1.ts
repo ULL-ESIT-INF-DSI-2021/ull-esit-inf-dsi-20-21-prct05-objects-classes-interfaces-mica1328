@@ -1,5 +1,5 @@
 class Pokemon{
-
+//jnejfnlinflenali
     public name: string;
     public weight: number;
     public height: number;
