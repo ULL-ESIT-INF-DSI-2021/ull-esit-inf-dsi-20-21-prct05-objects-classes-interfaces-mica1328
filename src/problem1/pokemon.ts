@@ -1,3 +1,7 @@
+/**
+ * Ejercicio 1 - Pokedex
+ */
+
 export class Pokemon{
 
     public name: string;
