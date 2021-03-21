@@ -2,12 +2,12 @@
  * Ejercicio 3 - Medios de transporte
  */
 
- interface Movable {
+ export interface Movable {
     speed: number;
     type_: string;
 }
 
-class Street implements Movable{
+export class Street implements Movable{
 
     public transport: Movable[];
     public maxSpeed: number;
@@ -91,6 +91,14 @@ class Street implements Movable{
         return howManySco;
     }
 
+    deleteVe(type_: string){
+
+    for (let i = 0; i < this.transport.length; i++){
+      if (this.transport[i].type_ == type_){
+        this.transport.splice(i, 1);
+      }
+    }
+  }
 }
 
 let c1: Movable = {speed: 90, type_:"coche"};
@@ -102,10 +110,11 @@ let c6: Movable = {speed: 10, type_:"patineta"};
 let c7: Movable = {speed: 90, type_:"tren"};
 let c8: Movable = {speed: 70, type_:"moto"};
 let c9: Movable = {speed: 110, type_:"moto"};
+let c10: Movable = {speed: 50, type_:"camion"};
 
 
 
-let vehiculo: Movable[] = [c1, c2, c3, c4, c5, c9, c7, c8, c6];
+let vehiculo: Movable[] = [c1, c2, c3, c4, c5, c9, c7, c8, c6, c10];
 
 
 let Castillo = new Street(120, "camion",vehiculo);
@@ -117,10 +126,15 @@ let motos = Castillo.countBike();
 let trenes = Castillo.countTrain();
 let patin = Castillo.countSco();
 
+let out = Castillo.deleteVe("bicicleta");
+let bicis2 = Castillo.countBici();
+
 console.log("Hay estos vehiculos en la calle", calle1);
-console.log("Hay ", cars, " coches en la calle");
-console.log("Hay ", bus, " guaguas en la calle");
-console.log("Hay ", motos, " motos en la calle");
-console.log("Hay ", trenes, " trenes en la calle");
-console.log("Hay ", patin, " patinetas en la calle");
-console.log("Hay ", bicis, " bicicletas en la calle");
+console.log("Hay ", cars, " coche/s en la calle");
+console.log("Hay ", bus, " guagua/s en la calle");
+console.log("Hay ", motos, " moto/s en la calle");
+console.log("Hay ", trenes, " tren/es en la calle");
+console.log("Hay ", patin, " patineta/s en la calle");
+console.log("Hay ", bicis, " bicicleta/s en la calle");
+console.log("Hay estos vehiculos en la calle", calle1);
+console.log("Hay ", bicis2, " bicicleta/s en la calle");

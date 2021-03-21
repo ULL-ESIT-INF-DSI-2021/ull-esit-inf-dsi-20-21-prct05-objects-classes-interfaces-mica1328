@@ -6,7 +6,7 @@
  * @param ninetales sera el primer color que nos den de la resistencia
  * @param leafeon sera el segundo color que nos den de la resistencia
  * @class Combat 
- * @returns retornarmos el valor total de la resistencia
+ * @returns
  */
 
 import { Pokemon } from './problem1-1';
