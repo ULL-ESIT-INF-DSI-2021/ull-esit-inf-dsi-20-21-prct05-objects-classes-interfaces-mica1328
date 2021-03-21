@@ -1,6 +1,7 @@
 {
     "entryPoints": [
         "./src/problem1/problem1.ts",
+        "./src/problem1/pokemon.ts",
         "./src/problem3/problem3.ts"
 
     ],
