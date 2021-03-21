@@ -1,9 +1,14 @@
 /**
  * Ejercicio 1 - Pokedex
+ *  @author Micaela Lucia Mungay Juncal
+ * @function fight Aqui calculamos la resistencia 
+ * @param ninetales sera el primer color que nos den de la resistencia
+ * @param leafeon sera el segundo color que nos den de la resistencia
+ * @class Combat 
+ * @returns retornarmos el valor total de la resistencia
  */
 
 import { Pokemon } from './problem1-1';
-
 
 let ninetales = new Pokemon("ninetales", 19.9, 1.1, "fuego", 76, 75, 100, 73);
 let leafeon = new Pokemon("leafeon", 25.5, 1.0, "hierba", 110, 130, 95, 65);
