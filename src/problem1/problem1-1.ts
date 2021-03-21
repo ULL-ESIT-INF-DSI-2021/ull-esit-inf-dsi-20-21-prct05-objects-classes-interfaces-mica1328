@@ -1,5 +1,5 @@
 /**
- * Ejercicio 1 - Pokedex
+ * Ejercicio 1 - Pokedex (clase aparte de pokemon)
  */
 
 export class Pokemon{
