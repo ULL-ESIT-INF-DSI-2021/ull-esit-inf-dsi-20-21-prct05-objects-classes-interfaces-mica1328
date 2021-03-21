@@ -1,6 +1,7 @@
 /**
  * Ejercicio 1 - Pokedex
- *  @author Micaela Lucia Mungay Juncal
+ * 
+ * @author Micaela Lucia Mungay Juncal
  * @function fight Aqui calculamos la resistencia 
  * @param ninetales sera el primer color que nos den de la resistencia
  * @param leafeon sera el segundo color que nos den de la resistencia
