@@ -15,7 +15,7 @@ let ninetales = new Pokemon("ninetales", 19.9, 1.1, "fuego", 76, 75, 100, 73);
 let leafeon = new Pokemon("leafeon", 25.5, 1.0, "hierba", 110, 130, 95, 65);
 
 
-class Combat{
+export class Combat{
 
     private rival1: Pokemon;
     private rival2: Pokemon;
