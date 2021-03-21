@@ -1,3 +1,7 @@
+/**
+ * Ejercicio 1 - Pokedex
+ */
+
 import { Pokemon } from './pokemon';
 
 
