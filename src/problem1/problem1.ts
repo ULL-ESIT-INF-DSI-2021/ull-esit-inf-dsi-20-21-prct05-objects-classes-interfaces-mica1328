@@ -2,7 +2,7 @@
  * Ejercicio 1 - Pokedex
  */
 
-import { Pokemon } from './pokemon';
+import { Pokemon } from './problem1-1';
 
 
 let ninetales = new Pokemon("ninetales", 19.9, 1.1, "fuego", 76, 75, 100, 73);
