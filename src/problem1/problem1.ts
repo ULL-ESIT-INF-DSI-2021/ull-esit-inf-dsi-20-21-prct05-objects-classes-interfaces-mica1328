@@ -2,11 +2,7 @@
  * Ejercicio 1 - Pokedex
  * 
  * @author Micaela Lucia Mungay Juncal
- * @function fight Aqui simulamos la pelea entre los rivales 
- * @param rival1 contringante 1
- * @param rival2 contringante 2
- * @class clase en la cual se simula el cambate entre ambos pokemons hasta que solo quede uno
- * @returns se retorna el nombre del pokemon el cual ha quedado con "vida"
+ * 
  */
 
 import { Pokemon } from './problem1-1';
@@ -14,16 +10,20 @@ import { Pokemon } from './problem1-1';
 let ninetales = new Pokemon("ninetales", 19.9, 1.1, "fuego", 76, 75, 100, 73);
 let leafeon = new Pokemon("leafeon", 25.5, 1.0, "hierba", 110, 130, 95, 65);
 
-
+/**  @class clase en la cual se simula el cambate entre ambos pokemons hasta que solo quede uno */
 export class Combat{
 
+  /** @param rival1 contringante 1*/
     private rival1: Pokemon;
+  /** @param rival2 contringante 1*/
     private rival2: Pokemon;
 
     constructor(rival1: Pokemon, rival2: Pokemon){
         this.rival1 = ninetales;
         this.rival2 = leafeon;
     }
+
+/** @function fight Aqui simulamos la pelea entre los rivales  */
 
     fight() {
 
@@ -142,10 +142,12 @@ export class Combat{
 
     if(this.rival1.hp < this.rival2.hp){
         let aux1 = this.rival2.name;
+/**  @returns se retorna el nombre del pokemon el cual ha quedado con "vida" */
         return (aux1);
     }
     else{
         let aux2 = this.rival1.name;
+/**  @returns se retorna el nombre del pokemon el cual ha quedado con "vida" */
         return(aux2);
     }
     
