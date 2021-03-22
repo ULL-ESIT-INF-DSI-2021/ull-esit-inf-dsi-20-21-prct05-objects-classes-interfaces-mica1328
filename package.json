@@ -4,13 +4,10 @@
   "description": "",
   "typedoc": "typedoc --options ./typedoc.json ./packages/",
   "main": "problem1.js",
-  "directories": {
-    "doc": "typedoc"
-  },
   "scripts": {
-    "test": "mocha -r ts-node/register 'test/**/*.ts'",
+    "test": "mocha",
     "doc": "typedoc",
-    "start": "tsc-watch --onSuccess \"node dist/problem1/problem1.js\""
+    "start": "tsc-watch --onSuccess \"node dist/problem3/problem3.js\""
   },
   "repository": {
     "type": "git",
