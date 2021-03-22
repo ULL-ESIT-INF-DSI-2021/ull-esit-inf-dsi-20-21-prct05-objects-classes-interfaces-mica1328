@@ -2,11 +2,11 @@
  * Ejercicio 1 - Pokedex
  * 
  * @author Micaela Lucia Mungay Juncal
- * @function fight Aqui calculamos la resistencia 
- * @param ninetales sera el primer color que nos den de la resistencia
- * @param leafeon sera el segundo color que nos den de la resistencia
- * @class Combat 
- * @returns
+ * @function fight Aqui simulamos la pelea entre los rivales 
+ * @param rival1 contringante 1
+ * @param rival2 contringante 2
+ * @class clase en la cual se simula el cambate entre ambos pokemons hasta que solo quede uno
+ * @returns se retorna el nombre del pokemon el cual ha quedado con "vida"
  */
 
 import { Pokemon } from './problem1-1';
