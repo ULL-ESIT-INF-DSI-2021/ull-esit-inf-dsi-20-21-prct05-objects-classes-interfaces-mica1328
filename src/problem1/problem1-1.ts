@@ -1,19 +1,19 @@
 /**
  * Ejercicio 1 - Pokedex (clase aparte de pokemon)
- * 
  * Aqui simplemente vamos a tener la informacion de cada pokemon
- * @param name El nombre del pokemon
- * @param weight Peso del pokemon
- * @param height Altura del pokemon
- * @param type_ Tipo del pokemon, si se trata de hierba, agua, fuego o electricidad
- * @param attack Los puntos de ataque del pokemon
- * @param defense Los puntos de defensa del pokemon
- * @param speed Los puntos de velocidad del pokemon
- * @param hp La vida del pokemon
  * 
  */
 
 export class Pokemon{
+
+    /** @param name El nombre del pokemon
+    * @param weight Peso del pokemon
+    * @param height Altura del pokemon
+    * @param type_ Tipo del pokemon, si se trata de hierba, agua, fuego o electricidad
+    * @param attack Los puntos de ataque del pokemon
+    * @param defense Los puntos de defensa del pokemon
+    * @param speed Los puntos de velocidad del pokemon
+    * @param hp La vida del pokemon */
 
     public name: string;
     public weight: number;
