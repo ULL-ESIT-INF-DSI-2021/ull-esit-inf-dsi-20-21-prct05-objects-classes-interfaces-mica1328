@@ -13,10 +13,13 @@ let leafeon = new Pokemon("leafeon", 25.5, 1.0, "hierba", 110, 130, 95, 65);
 /**  @class clase en la cual se simula el cambate entre ambos pokemons hasta que solo quede uno */
 export class Combat{
 
-  /** @param rival1 contringante 1*/
-    private rival1: Pokemon;
-  /** @param rival2 contringante 1*/
-    private rival2: Pokemon;
+  /**
+   * @param rival1 contringante 1
+   * @param rival2 contringante 2
+   */
+  
+    public rival1: Pokemon;
+    public rival2: Pokemon;
 
     constructor(rival1: Pokemon, rival2: Pokemon){
         this.rival1 = ninetales;
