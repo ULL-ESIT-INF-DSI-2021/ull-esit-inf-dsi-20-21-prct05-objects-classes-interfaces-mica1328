@@ -2,6 +2,8 @@
  * Ejercicio 3 - Medios de transporte
  */
 
+
+
  export interface Movable {
     speed: number;
     type_: string;
@@ -32,6 +34,7 @@ export class Street implements Movable{
     }
 
     countCar(){
+        this.back();
         let howManyCar: number = 0;
         for(let i = 0; i < this.transport.length; i++){
             if(this.transport[i].type_ == "coche"){
@@ -42,6 +45,7 @@ export class Street implements Movable{
     }
 
     countBus(){
+        this.back();
         let howManyBus: number = 0;
         for(let i = 0; i < this.transport.length; i++){
             if(this.transport[i].type_ == "guagua"){
@@ -52,6 +56,7 @@ export class Street implements Movable{
     }
 
     countBici(){
+        this.back();
         let howManyBici: number = 0;
         for(let i = 0; i < this.transport.length; i++){
             if(this.transport[i].type_ == "bicicleta"){
@@ -62,6 +67,7 @@ export class Street implements Movable{
     }
 
     countTrain(){
+        this.back();
         let howManyTrain: number = 0;
         for(let i = 0; i < this.transport.length; i++){
             if(this.transport[i].type_ == "tren"){
@@ -72,6 +78,7 @@ export class Street implements Movable{
     }
 
     countBike(){
+        this.back();
         let howManyBike: number = 0;
         for(let i = 0; i < this.transport.length; i++){
             if(this.transport[i].type_ == "moto"){
@@ -82,6 +89,7 @@ export class Street implements Movable{
     }
 
     countSco(){
+        this.back();
         let howManySco: number = 0;
         for(let i = 0; i < this.transport.length; i++){
             if(this.transport[i].type_ == "patineta"){
@@ -118,7 +126,6 @@ let vehiculo: Movable[] = [c1, c2, c3, c4, c5, c9, c7, c8, c6, c10];
 
 
 let Castillo = new Street(120, "camion",vehiculo);
-let calle1 = Castillo.back();
 let cars = Castillo.countCar();
 let bus = Castillo.countBus();
 let bicis = Castillo.countBici();
@@ -129,12 +136,12 @@ let patin = Castillo.countSco();
 let out = Castillo.deleteVe("bicicleta");
 let bicis2 = Castillo.countBici();
 
-console.log("Hay estos vehiculos en la calle", calle1);
+console.log("Hay estos vehiculos en la calle", Castillo.back());
 console.log("Hay ", cars, " coche/s en la calle");
 console.log("Hay ", bus, " guagua/s en la calle");
 console.log("Hay ", motos, " moto/s en la calle");
 console.log("Hay ", trenes, " tren/es en la calle");
 console.log("Hay ", patin, " patineta/s en la calle");
 console.log("Hay ", bicis, " bicicleta/s en la calle");
-console.log("Hay estos vehiculos en la calle", calle1);
+console.log("Hay estos vehiculos en la calle", Castillo.back());
 console.log("Hay ", bicis2, " bicicleta/s en la calle");
